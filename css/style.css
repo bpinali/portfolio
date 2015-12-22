@@ -16,12 +16,17 @@
 
 body {}
 
+ol,
+ul {
+    list-style: none;
+}
+
 
 /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
-.top-navigation .links li {
+.top-navigation li {
     display: inline-block;
 }
 
