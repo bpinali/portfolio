@@ -2,12 +2,10 @@
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
     box-sizing: border-box;
 }
 
@@ -23,6 +21,10 @@ body {}
     (all the styles inside the < header > or < nav > tags)
 */
 
+.top-navigation .links li {
+    display: inline-block;
+}
+
 
 /* Content styles
     (all the styles inside the < sections > or < aside > tags)
@@ -32,16 +34,16 @@ body {}
 /* Light theme */
 
 .light {
-    background-color: lightgrey;
-    color: skyblue;
+    background-color: #A9CBD9;
+    color: #011826;
 }
 
 
 /* Dark theme */
 
 .dark {
-    background-color: skyblue;
-    color: lightgrey;
+    background-color: #011826;
+    color: #A9CBD9;
 }
 
 
@@ -53,3 +55,23 @@ body {}
 /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
+
+
+/*iPad landscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/*iPad potrait*/
+
+@media only screen and (max-width: 768px) {}
+
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {}
