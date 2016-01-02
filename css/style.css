@@ -1,82 +1,214 @@
-/* CSS reset
+    /* CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    box-sizing: border-box;
-}
-
-
-/* General styles
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+        box-sizing: border-box;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    /* General styles
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+    body {
+        color: #fff;
+    }
 
-ol,
-ul {
-    list-style: none;
-}
+    ol,
+    ul {
+        list-style: none;
+    }
 
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 
-/* Header styles
+    .container-wrapper {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .img-circle {
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+    /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
-.top-navigation li {
-    display: inline-block;
-}
+    .top-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        text-align: right;
+        width: 100%;
+        background-color: #011826;
+        opacity: 0.8;
+        -webkit-box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.65);
+        box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.65);
+    }
 
+    .top-navigation ul {
+        width: 100%;
+    }
 
-/* Content styles
+    .top-navigation li {
+        display: inline-block;
+        margin-right: 2rem;
+        margin-top: .55rem;
+        margin-bottom: .55rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    header {
+        background-image: url()
+    }
+
+    .masthead-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .masthead h1,
+    .masthead h2 {
+        text-shadow: 3px 3px 4px rgba(12, 12, 12, 0.8);
+    }
+
+    .masthead h1 {
+        font-size: 1.75rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .masthead h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 1.75rem;
+    }
+
+    .center-banner {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-top: .5em;
+        margin-bottom: .25em;
+    }
+
+    .center-banner p {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        font-size: 2.5rem;
+    }
+    /* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
+    /* Light theme */
 
+    .light {
+        background-color: #A9CBD9;
+        color: #011826;
+    }
+    /* Dark theme */
 
-/* Light theme */
+    .dark {
+        background-color: #011826;
+        color: #A9CBD9;
+    }
 
-.light {
-    background-color: #A9CBD9;
-    color: #011826;
-}
+    .portfolio li {
+        width: 31.1%;
+        margin-right: 1.75%;
+        margin-top: .5rem;
+        display: inline-block;
+        text-align: center;
+    }
 
+    .portfolio li > img {
+        width: 100%;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-box-shadow: 2px 2px 18px -3px rgba(255, 255, 255, 0.65);
+        -moz-box-shadow: 2px 2px 18px -3px rgba(255, 255, 255, 0.65);
+        box-shadow: 2px 2px 18px -3px rgba(255, 255, 255, 0.65);
+    }
 
-/* Dark theme */
+    .contact-form,
+    .contact-social {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 1.5rem;
+    }
 
-.dark {
-    background-color: #011826;
-    color: #A9CBD9;
-}
+    fieldset input[type=text],
+    fieldset textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 350px;
+    }
 
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: .6rem;
+        margin-top: .6rem;
+    }
 
-/* Footer styles
-    (all the styles inside the < footer > tag)
-*/
+    .contact-social {
+        padding-left: 12rem;
+    }
 
+    .social .fa {
+        font-size: 2rem;
+        padding-right: .6rem;
+    }
 
-/* Responsive styles
+    .social li {
+        margin-bottom: 1rem;
+    }
+    /* Footer styles
+    (all the styles inside the < footer > tag)*/
+
+    footer {
+        text-align: center;
+    }
+
+    */
+    /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 */
+    /*iPad landscape / small laptop*/
 
+    @media only screen and (max-width: 1024px) {}
+    /*iPad potrait*/
 
-/*iPad landscape / small laptop*/
+    @media only screen and (max-width: 768px) {}
+    /*iPhone landscape*/
 
-@media only screen and (max-width: 1024px) {}
+    @media only screen and (max-width: 480px) {}
+    /*iPhone portrait*/
 
-
-/*iPad potrait*/
-
-@media only screen and (max-width: 768px) {}
-
-
-/*iPhone landscape*/
-
-@media only screen and (max-width: 480px) {}
-
-
-/*iPhone portrait*/
-
-@media only screen and (max-width: 320px) {}
+    @media only screen and (max-width: 320px) {}
